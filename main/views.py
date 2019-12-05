@@ -1,4 +1,4 @@
-import flask
+from flask import request, jsonify
 from main import app
 
 
@@ -9,4 +9,4 @@ def show_entries():
 
 @app.route('/hello')
 def hello_world():
-    return flask.jsonify({'message': 'Hello, world'})
+    return jsonify({'message': 'Hello, world'})
