@@ -24,3 +24,7 @@ jobs:
       - run:
           command: |
             pipenv run test
+      - store_test_results:
+          path: target/testreport
+      - store_artifacts:
+          path: target/testreport
