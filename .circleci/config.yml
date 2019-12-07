@@ -22,5 +22,5 @@ jobs:
             - "/usr/local/bin"
             - "/usr/local/lib/python3.7/site-packages"
       - run:
-        command: |
-          pipenv run test
+          command: |
+            pipenv run test
