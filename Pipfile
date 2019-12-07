@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 pylint = "*"
 autopep8 = "*"
+flake8 = "*"
 
 [packages]
 flask = "*"
@@ -13,3 +14,7 @@ gunicorn = "*"
 
 [requires]
 python_version = "3.7"
+
+[scripts]
+start = "python main/views.py"
+test = "python -m unittest discover -v tests"
